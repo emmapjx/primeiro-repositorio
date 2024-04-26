@@ -1,3 +1,27 @@
-<html>
-  <H1>Meu primeiro arquivo em HTML</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, incial-scale=1.0">
+    </head>
+<body>
+    <h1>Prog</h1>
+    <p>primeiro te dará o valo e depois calculará a Bhaskará e daá os valores de x1 e x2."</p>
+    <script> 
+        var nome = window.prompt("Qual é seu nome")
+        var quantidadeLetras = nome.length;
+        window.alert("Olá, seu nome tem" +quantidadeLetras+ "letras.")
+                     
+        var a = Number(window.prompt("Digite valor de a"))
+        var b = Number(window.prompt("Digite valor de b"))
+        var c = Number(window.prompt("Digite valor de c"))
+        
+        var delta = b * b - 4 * a * c
+            window.alert("O valor de delta é: " + delta)
+
+        var x1 = (-b + (delta ** 0.5) / (2 * a))
+        var x2 = (-b - (delta ** 0.5) / (2 * a))
+            window.alert("Os resultados são: " + x1 + " e " + x2)
+   </script>
+</body>
 </html>
